@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,500&family=Signika+Negative:wght@400;600;700&family=Unbounded:wght@300;400;500;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header {
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/sirket.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+nav {
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav img {
+	width: 150px;
+}
+
+.nav-link {
+	flex: 1;
+	text-align: right;
+}
+
+.nav-link ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+.nav-link ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.nav-link ul li::after {
+	content: '';
+	width: 0%;
+	height: 3px;
+	background: #8c5508;
+	display: block;
+	margin: auto;
+	transition: 0.3s;
+}
+
+.nav-link ul li:hover::after {
+	width: 100%;
+}
+
+.orta-yazi {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 90%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+}
+
+.orta-yazi h1 {
+	font-size: 62px;
+}
+
+.orta-yazi p {
+	margin: 10px 0 50px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.buton {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border: 2px solid #fff;
+	padding: 16px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.buton:hover {
+	border: 1px solid #8c5508;
+	background: #8c5508;
+	transition: 1s;
+}
+
+nav .fa {
+	display: none;
+	display: block;
+	color: #fff;
+	margin: 10px;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+nav .fa:hover {
+	color: #8c5508;
+	transition: 1s;
+}
+
+.nav-link ul li {
+	padding: 30px;
+}
+
+
+/*hakkında*/
+
+.hakkinda {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+p {
+	color: black;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+
+.hakkinda p {
+	color: black;
+}
+
+.hakkinda-col p {
+	color: black;
+}
+
+.hakkinda-col h3 {
+	color: black;
+}
+
+
+.row {
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.hakkinda-col {
+	flex-basis: 31%;
+	background: #fdf9e9;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.2s;
+	margin-right: 2%;
+}
+
+.hakkinda-col a {
+	color: black;
+	font-size: 40px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.hakkinda-col a:hover {
+	color:#8c5508;
+	transition: 0.5s;
+}
+
+h3 {
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.hakkinda-col:hover {
+	box-shadow: 0 0 20px 0px #8c5508;
+}
+
+.portfolio {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#baslik {
+	display: flex;
+	justify-content: center;
+}
+
+#baslik2 p {
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+}
+
+
+.portfolio-item {
+	width: 25%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.portfolio-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: .5s;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: #5b2a02;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	opacity: 0.8;
+	color: white;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	transition: .5s;
+
+}
+
+.overlay i {
+	padding-top: 0px;
+}
+
+.overlay p {
+	color: white;
+	font-size: 12px;
+}
+
+.overlay h5 {
+	margin-left: 6px;
+}
+
+.portfolio-item:hover .overlay {
+	top: 0;
+
+}
+
+.portfolio-item:hover img {
+	transform: scale(1.1);
+}
+
+
+.espressosirket {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#bar a {
+	color: black;
+	text-decoration: none;
+}
+
+.sirket-col {
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.sirket-col img {
+	width: 100%;
+}
+
+.katman {
+	background: transparent;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+	color: white;
+}
+
+.katman:hover {
+	background: rgba(22, 0, 0, 0.7);
+}
+
+.katman:hover #aciklama {
+	display: block;
+}
+
+#aciklama {
+	display: none;
+}
+
+#aciklama p {
+	color: white;
+}
+
+.recete {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.recete-col {
+	flex-basis: 31%;
+	margin-bottom: 5%;
+	border-radius: 10px;
+	text-align: left;
+}
+
+.recete-col img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.recete-col p {
+	padding: 0;
+	text-align: center;
+}
+
+.recete-col h2 {
+	margin-bottom: 18px;
+	margin-top: 13px;
+	text-align: center;
+}
+
+.Yorumlar {
+	width: 80%;
+	margin: auto;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.Yorumlar-col {
+	flex-basis: 44%;
+	margin-bottom: 5%;
+	text-align: left;
+	border-radius: 10px;
+	background: #fdf9e9;
+	padding: 25px;
+	display: flex;
+}
+
+.Yorumlar-col img {
+	height: 40px;
+	margin-left: 5px;
+	margin-right: 30px;
+	border-radius: 100%;
+}
+
+.Yorumlar-col p {
+	padding: 0;
+}
+
+.Yorumlar-col h2 {
+	margin-top: 15px;
+	text-align: left;
+}
+
+.Yorumlar-col .fa {
+	color: #8c5508;
+}
+
+.footer {
+	background-color: #8c5508;
+}
+
+.footer-col {
+	width: 20%;
+	padding: 0 15px;
+	list-style: none;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+	margin-top: 20px;
+}
+
+.footer-col h4:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	background-color: #8c5508;
+	height: 4px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li {
+	margin-bottom: 10px;
+	list-style: none;
+
+
+}
+
+.footer-col ul li a {
+	font-size: 16px;
+	text-transform: capitalize;
+	color: black;
+	text-decoration: none;
+	font-weight: 300;
+	color: black;
+	display: block;
+	transition: all 0.3s ease;
+
+}
+
+.footer-col ul li a:hover {
+	color: white;
+	padding-left: 10px;
+}
+
+.footer-col ul a {
+	color: black;
+}
+
+footer img {
+	width: 150px;
+	margin-top: 40px;
+}
+
+#yorum-formu {
+	display: flex;
+	flex-direction: column;
+}
+
+#yorum-formu {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fdf9e9;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#yorum-formu label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+#yorum-formu input[type="text"],
+#yorum-formu textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+#yorum-formu textarea {
+	resize: vertical;
+}
+
+#yorum-formu button {
+	background: black;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#yorum-formu button:hover {
+	background: #8c5508;
+	transition: 0.5s;
+}
+
+#puan {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+#puan option {
+	padding: 10px;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+}
+
+#puan option:hover {
+	background-color: #e0e0e0;
+}
+
+#puan option:checked {
+	background-color: #4caf50;
+	color: white;
+}
+
+.footer-bottom p {
+	text-align: center;
+	font-size: 11px;
+	margin-top: 25px;
+}

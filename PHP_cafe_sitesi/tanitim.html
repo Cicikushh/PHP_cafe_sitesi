@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kayıt Ol</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kayit.css">
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<section>
+		<div class="container">
+			<h1>Barista Kayıt Formu </h1>
+			<form id="barista_formu" method="post" action="barista_db.php">
+				<div>
+					<i class="fas fa-user"></i>
+					<input type="text" id="isim" name="isim" placeholder="Adınız">
+				</div>
+				<div>
+					<i class="fas fa-envelope"></i>
+					<input type="email" id="eposta" name="eposta" placeholder="E-postanız">
+				</div>
+				<div>
+					<i class="fas fa-phone"></i>
+					<input type="tel" id="telefon" name="telefon" placeholder="Telefon Numaranız">
+				</div>
+				<div>
+					<i class="fab fa-diaspora"></i>
+					<input type="password" id="sifre" name="sifre" placeholder="Şifreniz">
+				</div>
+				<div>
+					<i class="fab fa-diaspora"></i>
+					<input type="password" id="sifre_tekrar" name="sifre_tekrar" placeholder="Tekrar Şifrenizi Giriniz">
+				</div>
+				<button type="submit">Kayıt Ol</button>
+				<button type="reset">Temizle</button>
+			</form>
+		</div>
+	</section>
+</body>
+</html>
